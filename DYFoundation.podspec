@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 spec.name             = 'DYFoundation'
-spec.version          = '1.0'
+spec.version          = '2.0'
 spec.summary          = 'Guide for private pods :'
 spec.description      = <<-DESC
 Guide for private pods
