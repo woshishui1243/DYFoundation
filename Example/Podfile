@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DYFoundation_Example' do
+  pod 'DYFoundation', :path => '../'
+
+  target 'DYFoundation_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
