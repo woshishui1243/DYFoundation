@@ -1,0 +1,27 @@
+PODS:
+  - DYFoundation (1.0):
+    - DYFoundation/DYSub (= 1.0)
+    - DYFoundation/DYUI (= 1.0)
+  - DYFoundation/DYSub (1.0)
+  - DYFoundation/DYUI (1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - DYFoundation (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  DYFoundation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DYFoundation: e661e736acebb5b369b55adf7a8b39e2be8966d5
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 8082e05a7fe5b4dbd3be400b5e34eae477f854d2
+
+COCOAPODS: 1.1.0

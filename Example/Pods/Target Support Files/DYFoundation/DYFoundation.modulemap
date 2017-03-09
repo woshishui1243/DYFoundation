@@ -1,0 +1,6 @@
+framework module DYFoundation {
+  umbrella header "DYFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "DYFoundation",
+  "version": "1.0",
+  "summary": "Guide for private pods :",
+  "description": "Guide for private pods",
+  "homepage": "https://github.com//",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "woshishui1243": "https://github.com/woshishui1243"
+  },
+  "source": {
+    "git": "https://github.com/woshishui1243/DYFoundation.git",
+    "tag": "1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "subspecs": [
+    {
+      "name": "DYSub",
+      "source_files": "DYFoundation/Classes/DYSub/DYRoot*.{h,m}"
+    },
+    {
+      "name": "DYUI",
+      "source_files": "DYFoundation/Classes/DYUI/DYUI*.{h,m}"
+    }
+  ]
+}

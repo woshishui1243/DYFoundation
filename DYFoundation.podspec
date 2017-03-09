@@ -1,42 +1,23 @@
-#
-# Be sure to run `pod lib lint DYFoundation.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
+Pod::Spec.new do |spec|
+spec.name             = 'DYFoundation'
+spec.version          = '1.0'
+spec.summary          = 'Guide for private pods :'
+spec.description      = <<-DESC
+Guide for private pods
+DESC
+spec.homepage         = 'https://github.com//'
+spec.license          = { :type => 'MIT', :file => 'LICENSE' }
+spec.author           = { 'woshishui1243' => 'https://github.com/woshishui1243' }
+spec.source           = { :git => 'https://github.com/woshishui1243/DYFoundation.git', :tag => spec.version.to_s }
+spec.ios.deployment_target = '8.0'
+#spec.source_files = 'DYFoundation/Classes/*.{h,m}'
 
-Pod::Spec.new do |s|
-  s.name             = 'DYFoundation'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DYFoundation.'
+spec.subspec 'DYSub' do |cs|
+    cs.source_files = 'DYFoundation/Classes/DYSub/DYRoot*.{h,m}'
+end
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+spec.subspec 'DYUI' do |cs|
+    cs.source_files = 'DYFoundation/Classes/DYUI/DYUI*.{h,m}'
+end
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/woshishui1243/DYFoundation'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'woshishui1243' => 'dayu.li@corp.elong.com' }
-  s.source           = { :git => 'https://github.com/woshishui1243/DYFoundation.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'DYFoundation/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'DYFoundation' => ['DYFoundation/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
