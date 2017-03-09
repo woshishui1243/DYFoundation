@@ -22,7 +22,7 @@ spec.subspec 'DYUI' do |cs|
 end
 
 spec.subspec 'ThirdParty' do |cs|
-    cs.source_files = 'DYFoundation/Classes/ThirdParty/*.{h,m,txt}'
+    cs.source_files = 'DYFoundation/Classes/ThirdParty/*.{h,txt}'
     cs.vendored_libraries  = 'DYFoundation/Classes/ThirdParty/*.{a}'
     cs.frameworks = 'SystemConfiguration','CoreGraphics','CoreTelephony','Security','CoreLocation','JavaScriptCore'
     cs.libraries  = 'iconv','sqlite3','stdc++','z'
