@@ -18,6 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 3.1.0"
+    ]
+  },
   "subspecs": [
     {
       "name": "DYSub",
@@ -26,6 +31,25 @@
     {
       "name": "DYUI",
       "source_files": "DYFoundation/Classes/DYUI/DYUI*.{h,m}"
+    },
+    {
+      "name": "ThirdParty",
+      "source_files": "DYFoundation/Classes/ThirdParty/*.{h,m,txt}",
+      "vendored_libraries": "DYFoundation/Classes/ThirdParty/*.{a}",
+      "frameworks": [
+        "SystemConfiguration",
+        "CoreGraphics",
+        "CoreTelephony",
+        "Security",
+        "CoreLocation",
+        "JavaScriptCore"
+      ],
+      "libraries": [
+        "iconv",
+        "sqlite3",
+        "stdc++",
+        "z"
+      ]
     }
   ]
 }

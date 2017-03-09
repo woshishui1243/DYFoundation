@@ -7,6 +7,9 @@
 //
 
 #import "DYViewController.h"
+#import "DYRootObject.h"
+#import "DYUIObject.h"
+#import "WXApi.h"
 
 @interface DYViewController ()
 
